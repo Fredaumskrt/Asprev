@@ -26,7 +26,7 @@ public class fluxuograma {
                 System.out.println("Vamos calcular agora o percentual: ");
                 
             }  if(votosBrancos != 0){
-                votosBrancos
+                votosBrancos = votosBrancos / votosTotais;
             }
             
         }
