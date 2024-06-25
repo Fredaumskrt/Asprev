@@ -11,7 +11,17 @@ public class fluxuograma02 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        int[] maça = {1,30};
+        System.out.println("Qual foi a quantidade de Maçãs vendidas? ");
+        int qtdMaca = sc.nextInt();
         
+        boolean test;
+
+        while(true){
+            if(qtdMaca == 12){
+                 
+            }
+        }
+
     }   
 }
