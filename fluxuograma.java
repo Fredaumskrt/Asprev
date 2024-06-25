@@ -9,8 +9,10 @@ caso contrário imprimir mensagem informando que haverá nova eleição
 public class fluxuograma {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int votosBrancos, votosNulos, votosValidos;
         boolean test;
+
         votosBrancos = scanner.nextInt();
         votosNulos = scanner.nextInt();
         votosValidos = scanner.nextInt();
@@ -22,16 +24,27 @@ public class fluxuograma {
                 System.out.println("Votos Brancos " + votosBrancos);
                 System.out.println("Votos Nulos " + votosNulos);
                 System.out.println("Votos Validos " + votosValidos);
-                System.out.println("Soma: " + votosTotais);
-                System.out.println("Vamos calcular agora o percentual: ");
+
+                // percentual de votos brancos
+                double percentualBrancos = ((double) votosBrancos / votosTotais) * 100;
+                System.out.println("Percentual de votos Brancos: " + percentualBrancos);
                 
-            }  if(votosBrancos != 0){
-                votosBrancos = votosBrancos / votosTotais;
+                // percentual de votos nulos
+                double percentualNulos = ((double) votosNulos / votosTotais) * 100;
+                System.out.println("Percentual de votos Nulos: " + percentualNulos);
+
+                // percentual de votos validos
+                double percentualValidos = ((double) votosValidos / votosTotais) * 100;
+                System.out.println("Percentual de votos Validos: " + percentualValidos);
+
+                if(percentualValidos > 50.0){
+                    System.out.println("Eleição encerrada");
+                } else{
+                    System.out.println("Haverá outra eleição");
+                }
+                break;
             }
-            
         }
-        
-            
-            
+
     }
 }
