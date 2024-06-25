@@ -1,21 +1,22 @@
 import java.util.Scanner;
-
-/*Escreva um algoritmo que receba o número de votos brancos, nulos e
+/*
+ * Escreva um algoritmo que receba o número de votos brancos, nulos e
 válidos de um município. Calcule e escreva o percentual que cada um
 representa em relação ao total de votos computados. Caso o percentual de
 votos válidos seja superior a 50%, imprimir a mensagem eleição encerrada,
 caso contrário imprimir mensagem informando que haverá nova eleição
-*/
+ */
+
 public class fluxuograma {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int votosBrancos, votosNulos, votosValidos;
         boolean test;
 
-        votosBrancos = scanner.nextInt();
-        votosNulos = scanner.nextInt();
-        votosValidos = scanner.nextInt();
+        votosBrancos = sc.nextInt();
+        votosNulos = sc.nextInt();
+        votosValidos = sc.nextInt();
 
         while (true) {
             int votosTotais = 0;
