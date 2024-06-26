@@ -14,22 +14,26 @@ public class fluxuograma {
         int votosBrancos, votosNulos, votosValidos;
         boolean test;
 
-        votosBrancos = sc.nextInt();
-        votosNulos = sc.nextInt();
-        votosValidos = sc.nextInt();
-
         while (true) {
             int votosTotais = 0;
+
+            System.out.println("Digite a seguir seus votos Brancos: ");
+            votosBrancos = sc.nextInt();
+            System.out.println("Digite a seguir seus votos Nulos: ");
+            votosNulos = sc.nextInt();
+            System.out.println("Digite a seguir seus votos Validos: ");
+            votosValidos = sc.nextInt();
+
             if (votosBrancos != 0) {
                 votosTotais = votosBrancos + votosNulos + votosValidos;
-                System.out.println("Votos Brancos " + votosBrancos);
-                System.out.println("Votos Nulos " + votosNulos);
-                System.out.println("Votos Validos " + votosValidos);
+                System.out.println("Votos Brancos: " + votosBrancos);
+                System.out.println("Votos Nulos: " + votosNulos);
+                System.out.println("Votos Validos: " + votosValidos);
 
                 // percentual de votos brancos
                 double percentualBrancos = ((double) votosBrancos / votosTotais) * 100;
                 System.out.println("Percentual de votos Brancos: " + percentualBrancos);
-                
+
                 // percentual de votos nulos
                 double percentualNulos = ((double) votosNulos / votosTotais) * 100;
                 System.out.println("Percentual de votos Nulos: " + percentualNulos);
@@ -38,12 +42,12 @@ public class fluxuograma {
                 double percentualValidos = ((double) votosValidos / votosTotais) * 100;
                 System.out.println("Percentual de votos Validos: " + percentualValidos);
 
-                if(percentualValidos > 50.0){
+                if (percentualValidos > 50.0) {
                     System.out.println("Eleição encerrada");
-                } else{
+                    break;
+                } else if (percentualValidos < 50.0) {
                     System.out.println("Haverá outra eleição");
                 }
-                break;
             }
         }
 

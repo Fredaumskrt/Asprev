@@ -12,22 +12,22 @@ public class fluxuograma2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double precomaça = 1.30;
-        System.out.println("Qual foi a quantidade de Maçãs vendidas? ");
+        double precomaca = 1.30;
+        System.out.println("Qual foi a quantidade de Macas vendidas? ");
 
         int qtdMaca = sc.nextInt();
         int duzia = 12;
         boolean test;
         if (qtdMaca <= duzia) {
-            System.out.println("O valor da maçã é R$1,30 ");
+            System.out.println("O valor da maca eh R$1,30 ");
         } else if (qtdMaca < 120) { // 10 x 12 (120)
-            precomaça = 1.00;
+            precomaca = 1.00;
         } else {
-            precomaça = 0.80;
+            precomaca = 0.80;
         }
 
-        double precoTotal = precomaça * qtdMaca;
-        System.out.println("O preço total foi R$: " + precoTotal);
+        double precoTotal = precomaca * qtdMaca;
+        System.out.println("O preco total foi R$: " + precoTotal);
 
     }
 }
