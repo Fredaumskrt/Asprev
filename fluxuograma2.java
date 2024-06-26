@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class fluxuograma02 {
+public class fluxuograma2 {
     /*
      * Em uma feira, as maçãs custam R$ 1.30 cada se vendida uma quantidade
      * inferior ou igual a uma dúzia, R$ 1.00 cada se vendida uma quantidade
