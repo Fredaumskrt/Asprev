@@ -25,7 +25,7 @@ public class fluxuograma3 {
             System.out.println("Aluno mais alto: " + studentA + " " + heightA + " " + " cm");
             System.out.println("Aluno mais baixo: " + studentB + " " + heightB + " " + " cm");
 
-        } else if (heightA < heightB) { // else if mais baixo estudante B e estudante A
+        } else if (heightA < heightB) { //  mais baixo estudante B e estudante A
             System.out.println("Aluno mais alto: " + studentB + " " + heightB + " " + " cn");
             System.out.println("Aluno mais baixo: " + studentA + " " + heightA + "cn");
         }
